@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/contxet"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xmlns:util="http://www.springframework.org/schema/util"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd
+ http://www.springframework.org/schema/util
+ http://www.springframework.org/schema/util/spring-util.xsd">
+ 
+ 
+ 
+ <util:list list-class="java.util.LinkedList" id="myfd">
+ 	<value>Yogi</value>
+ 	<value>Siddhant</value>
+ 	<value>MK</value>
+ 	<value>Vk</value>				
+ </util:list>
+ 
+ <util:map map-class="java.util.HashMap" id="myfee">
+ 	<entry key="Python" value="10000"/>
+ 	<entry key="Java" value="3460"/>
+ 	<entry key="c++" value="14250"/>
+ </util:map>
+ 
+ <util:properties id="dbcon">
+ 	<prop key="driver">com.mysql.jdbc.driver </prop>
+ 	<prop key="user">yogi</prop>
+ 	<prop key="pass">abc123</prop>
+ 	<prop key="url">m</prop>
+ </util:properties>
+ 
+ <bean class="com.springcore.standalone.collections.person" name="P">
+ 	<property name="friends">
+ 			 <ref  bean="myfd"/>
+ 			
+ 	</property>
+	<property name="fee" ref="myfee"/>
+ </bean>
+ 
+ </beans>
