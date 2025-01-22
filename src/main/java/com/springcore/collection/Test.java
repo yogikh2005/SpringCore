@@ -11,7 +11,7 @@ public class Test {
 		
 		System.out.println(e.getEmpName());
 		System.out.println(e.getEmpCoruse());
-		System.out.println(e.getEmpPhones());
+		System.out.println(e.getEmpPhones().getClass().getName());
 		System.out.println(e.getEmpAddress());
 		System.out.println(e.getDB());
 		
