@@ -1,4 +1,4 @@
-package com.sprincore.autowiring;
+package com.springcore.autowiring;
 
 public class emp {
 

@@ -8,11 +8,11 @@
  http://www.springframework.org/schema/context
  http://www.springframework.org/schema/beans/spring-context.xsd ">
  
-<bean class="com.sprincore.autowiring.Address" name="address">
+<bean class="com.springcore.autowiring.Address" name="address">
 	<property name="street" value="nangaon"/>
 	<property name="city" value="pune"/>
 </bean>
 
- <bean class="com.sprincore.autowiring.emp" name="E" autowire="constructor"/>
+ <bean class="com.springcore.autowiring.emp" name="E" autowire="constructor"/>
    
  </beans>
