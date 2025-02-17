@@ -40,6 +40,7 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
+    
      <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-params</artifactId>
@@ -64,6 +65,12 @@
     <artifactId>spring-context</artifactId>
     <version>5.3.18</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-jdbc -->
+
 
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-core -->
 
